@@ -3,6 +3,6 @@
 // ...
 export class ItalianHelloWorld {
   greet(name: string) {
-    return `Ciao ${name}`
+    return `Ciao ${name}`;
   }
 }
