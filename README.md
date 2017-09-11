@@ -6,6 +6,8 @@
 
 A sample project for TypeScript Library Starter.
 
+Docs published to: <https://tonysneed.github.io/hello-ts-lib-starter>
+
 ### Source
 
 Using: **typescript-library-starter**
@@ -156,4 +158,36 @@ Using: **typescript-library-starter**
   semantic-release-cli setup
   ```
 
- 
+ ### Docs
+
+- Push or merge PR to master to publish docs.
+  + Docs for this repo published to: <https://tonysneed.github.io/hello-ts-lib-starter>
+
+- To locate generated docs, open repo on GitHub
+  + Go to Settings for the repo, GitHub Pages section
+  + Uses TypeDoc: http://typedoc.org
+
+- Configure project to exclude tests from docs.
+  + Update build script to add: `--exclude '**/*.spec.ts'`
+
+- Use JavaDoc tags to document classes, methods, etc.
+  + See http://typedoc.org/guides/doccomments/
+  + Use jsdoc comments extension for VS Code: https://marketplace.visualstudio.com/items?itemName=stevencl.addDocComments
+  + Example:
+
+  ```js
+  /**
+  * Class representing a greeter.
+  */
+  export class HelloWorld {
+    /**
+    * Greet someone by name.
+    * @param  {string} name
+    * @returns A friendly greeting.
+    */
+    greet(name: string): string {
+      return `Hello ${name}`;
+    }
+  }
+  ```
+
