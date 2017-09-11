@@ -1,10 +1,10 @@
 # Hello TypeScript Library Starter
 
+A sample project for TypeScript Library Starter.
+
 [![Build Status](https://travis-ci.org/tonysneed/hello-ts-lib-starter.svg?branch=master)](https://travis-ci.org/tonysneed/hello-ts-lib-starter)
 [![Coverage Status](https://coveralls.io/repos/github/tonysneed/hello-ts-lib-starter/badge.svg?branch=master)](https://coveralls.io/github/tonysneed/hello-ts-lib-starter?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/tonysneed/hello-ts-lib-starter.svg)](https://greenkeeper.io/)
-
-A sample project for TypeScript Library Starter.
 
 Docs published to: <https://tonysneed.github.io/hello-ts-lib-starter>
 
