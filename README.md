@@ -212,4 +212,3 @@ Using: **typescript-library-starter**
 
 - On GitHub, rebase PR into master with “Rebase and merge” button
   + Travis CI will kick off a build
-  
