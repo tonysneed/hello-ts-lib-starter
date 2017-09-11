@@ -1,8 +1,13 @@
-// Import here Polyfills if needed. Recommended core-js (npm i -D core-js)
-// import "core-js/fn/array.find"
-// ...
+/**
+ * Class representing a greeter.
+ */
 export class HelloWorld {
-  greet(name: string) {
+  /**
+   * Greet someone by name.
+   * @param  {string} name
+   * @returns A friendly greeting.
+   */
+  greet(name: string): string {
     return `Hello ${name}`;
   }
 }

@@ -1,7 +1,5 @@
 import { HelloWorld } from './hello-world';
 
-// import { HelloWorld } from '../src/hello-ts-lib-starter';
-
 /**
  * HelloWorld test
  */
