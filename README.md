@@ -191,3 +191,24 @@ Using: **typescript-library-starter**
   }
   ```
 
+### Workflow
+
+- Create feature branch: my-new-feature.
+
+- If desired use non-conventional commits with SourceTree.
+  + Select option to bypass commit hooks.
+
+- Push branch to origin
+  + Husky will run prepush tasks (tests, bundling, docs).
+
+- Create PR on GitHub
+  + Travis will kick off a CI build.
+  + Coveralls will perform a code coverage check.
+
+- When code review has completed, squash into a conventional commit and force push feature branch.
+  + Create conventional commit: `npm run commit`
+  + Squash with interactive rebase, using conventional commit message. (In SourceTree select immediate ancestor to first non-conventional commit)
+  + Force push feature branch: `git push -f origin`
+
+- On GitHub, rebase PR into master with “Rebase and merge” button
+  + Travis CI will kick off a build
