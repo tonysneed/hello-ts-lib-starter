@@ -19,9 +19,9 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "lint": "tslint --type-check -p tsconfig.lint.json codeFrame 'src/**/*.ts' 'test/**/*.ts'",
+    "lint": "tslint --type-check -p tsconfig.json codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc && rollup -c && rimraf compiled && typedoc --out dist/docs --target es6 --theme minimal src",
+    "build": "tsc && rollup -c && rimraf compiled && typedoc --out dist/docs --target es6 --theme minimal --exclude '**/*.spec.ts' src",
     "start": "tsc-watch --onSuccess \"rollup -c\"",
     "test": "jest",
     "test:watch": "jest --watch",
