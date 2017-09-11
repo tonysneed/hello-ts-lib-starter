@@ -38,13 +38,13 @@
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     },
-    "publishConfig": {
-      "tag": "beta1"
-    },
     "validate-commit-msg": {
       "types": "conventional-commit-types",
       "helpMessage": "Use \"npm run commit\" instead, we use conventional-changelog format :) (https://github.com/commitizen/cz-cli)"
     }
+  },
+  "publishConfig": {
+    "tag": "beta1"
   },
   "jest": {
     "transform": {
