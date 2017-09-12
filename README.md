@@ -43,7 +43,6 @@ Using: **typescript-library-starter**
   ```
 
 - TypeScript:
-  + Update to latest version: `npm i --save-dev typescript`
   + Target es2015 in tsconfig.json.
   + Remove target with *dest: pkg.main* in rollup.config.js.
   + Remove *main* section in package.json.
@@ -129,7 +128,7 @@ Using: **typescript-library-starter**
   }
   ```
 
-### Automation
+### Setup
 
 - Open repo in [GitHub Desktop](https://desktop.github.com) and publish repo to GitHub.
   + Open in GitHub, copy the clone url.
@@ -144,21 +143,6 @@ Using: **typescript-library-starter**
 - Link repo to [Greenkeeper](https://greenkeeper.io) account.
   + Merge PR created by the Greenkeeper bot.
   + Add markdown for *Greenkeeper* badge to README.md.
-
-- Enable automated releases.
-  + Prepare hooks
-
-  ```
-  npm run semantic-release-prepare
-  ```
-
-  + Install and run [semantic release](https://github.com/semantic-release/semantic-release).
-  + Answer "no" when promoted to generate .travis.yml.
-
-  ```
-  npm install -g semantic-release-cli
-  semantic-release-cli setup
-  ```
 
  ### Docs
 
@@ -195,23 +179,25 @@ Using: **typescript-library-starter**
 
 ### Workflow
 
-- Create feature branch: my-new-feature.
+- Create develop branch and push to origin
+  + Leave master as the default branch
 
-- If desired use non-conventional commits with SourceTree.
-  + Select option to bypass commit hooks.
-
-- Push branch to origin
-  + Husky will run prepush tasks (tests, bundling, docs).
-
-- Create PR on GitHub
+- Create feature branch: @feature/my-new-feature.
+  + Push branch to origin - husky will run prepush (tests, bundling, docs, etc)
+  + PR into develop
   + Travis will kick off a CI build.
   + Coveralls will perform a code coverage check.
 
-- When code review has completed, squash into a conventional commit and force push feature branch.
-  + Create conventional commit: `npm run commit`
-  + Squash with interactive rebase, using conventional commit message. (In SourceTree select immediate ancestor to first non-conventional commit)
+- When code review has completed, squash into one commit and force push feature branch.
   + Force push feature branch: `git push -f origin`
 
-- On GitHub, rebase PR into master with “Rebase and merge” button
+- On GitHub, rebase PR into develop with “Rebase and merge” button
   + Travis CI will kick off a build
   
+- When ready for release, merge develop into master
+  + Create a release branch: @release/v1.0.0-beta1
+  + Include issues/PR's in the release notes
+  + Create or update CHANGELOG.md
+  + Update the version in package.json
+  + Publish to NPM: `npm publish --tag beta1` (omit tag for non-prerelease version)
+
