@@ -3,8 +3,7 @@
   "version": "0.0.0-development",
   "description": "",
   "keywords": [],
-  "main": "dist/hello-ts-lib-starter.umd.js",
-  "module": "dist/hello-ts-lib-starter.es2015.js",
+  "module": "dist/hello-ts-lib-starter.js",
   "typings": "dist/types/hello-ts-lib-starter.d.ts",
   "files": [
     "dist"

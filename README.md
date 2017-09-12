@@ -45,7 +45,9 @@ Using: **typescript-library-starter**
 - TypeScript:
   + Update to latest version: `npm i --save-dev typescript`
   + Target es2015 in tsconfig.json.
-  + Update suffix in *module* in package.json to es2015
+  + Remove target with *dest: pkg.main* in rollup.config.js.
+  + Remove *main* section in package.json.
+  + Remove es5 suffix in *module* in package.json
 
 - Update **.gitignore** from an Angular project.
   + Remove *.vscode* entry
