@@ -1,6 +1,6 @@
 {
   "name": "hello-ts-lib-starter",
-  "version": "0.0.0-development",
+  "version": "1.2.0-beta3",
   "description": "",
   "keywords": [],
   "main": "dist/hello-ts-lib-starter.umd.js",
