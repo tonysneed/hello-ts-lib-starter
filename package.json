@@ -1,6 +1,6 @@
 {
   "name": "hello-ts-lib-starter",
-  "version": "0.0.0-development",
+  "version": "1.5.0",
   "description": "",
   "keywords": [],
   "module": "dist/hello-ts-lib-starter.js",
