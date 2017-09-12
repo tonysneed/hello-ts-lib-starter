@@ -201,3 +201,4 @@ Using: **typescript-library-starter**
   + Update the version in package.json
   + Publish to NPM: `npm publish --tag beta1` (omit tag for non-prerelease version)
 
+ 
