@@ -21,7 +21,7 @@ Using: **typescript-library-starter**
   + Install packages.
 
   ```
-  npm i --save-dev codelyzer @angular/compiler@^2.3.1 @angular/core@^2.3.1 zone.js@^0.7.2
+  npm i --save-dev codelyzer @angular/compiler @angular/core zone.js
   ```
 
   + Remove Prettier (conflicts with TSLint) by 
@@ -29,7 +29,7 @@ Using: **typescript-library-starter**
   + Update *lint* script in package.json to include --type-check.
 
   ```json
-  "lint": "tslint --type-check -p tsconfig.json codeFrame 'src/**/*.ts' 'test/**/*.ts'"
+  "lint": "tslint --type-check -p tsconfig.json codeFrame 'src/**/*.ts'"
   ```
 
 
