@@ -52,7 +52,7 @@
     }
   },
   "devDependencies": {
-    "@angular/compiler": "^4.3.6",
+    "@angular/compiler": "^5.0.1",
     "@angular/core": "^4.3.6",
     "@types/jest": "^20.0.0",
     "@types/node": "^8.0.0",
