@@ -60,7 +60,7 @@
     "colors": "^1.1.2",
     "commitizen": "^2.9.6",
     "coveralls": "^2.13.1",
-    "cross-env": "^5.0.1",
+    "cross-env": "^6.0.1",
     "husky": "^0.14.0",
     "jest": "^21.0.0",
     "lint-staged": "^4.0.0",
