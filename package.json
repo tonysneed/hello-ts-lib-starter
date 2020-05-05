@@ -58,7 +58,7 @@
     "@types/node": "^8.0.0",
     "codelyzer": "^3.1.2",
     "colors": "^1.1.2",
-    "commitizen": "^2.9.6",
+    "commitizen": "^4.1.2",
     "coveralls": "^2.13.1",
     "cross-env": "^5.0.1",
     "husky": "^0.14.0",
